@@ -53,41 +53,64 @@ ul {
   list-style: none;
   text-align: center;
 }
+
+
 h3,
 p,
 span {
   font-family: "Lato";
 }
+
+
 img {
   max-width: 800px;
 }
+
+
 div.flex {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+
 div.full-container {
   width: 100%;
   max-width: 1850px;
   margin: 0 auto;
 }
+
+
 div.large-container {
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
 }
+
+
 div.container {
   width: 100%;
   max-width: 1140px;
   margin: 0 auto;
 }
+
+
 .secaoDestaque h2{
     font-size: 63px;
 }
+
+
 .secaoDestaque p{
     font-size: 21px;
 }
+
+
 .secaoDestaqueFormulario button{
     font-size: 14px;
 }
+
+
 article.flex{
     display: flex;
     flex-wrap: wrap;
@@ -95,73 +118,112 @@ article.flex{
     margin-left: 20%;
 
 }
+
+
 div.secaoSobre-flex-col{
     width: 40%;
     flex-direction: row;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 30px;;
 
 }
+
+
 div.secaoSobre-flex-col img{
     width: 250px;
 }
+
+
+figure figcaption{
+		display: none;
+	}
+
+
 div.secaoSobre-flex-col h2{
     font-size: 24px;
 }
+
+
 div.secaoSobre-flex-col p{
     font-size: 19px;
 }
+
+
+div.secaoSobre-flex-col:nth-child(1){
+  order: 1;
+}
+
+
+div.secaoSobre-flex-col:nth-child(2){
+  order: 2;
+}
+
+
+div.secaoSobre-flex-col:nth-child(3){
+  order: 3;
+  background-color: rgba(243, 237, 237, 0.993);
+}
+
+
+div.secaoSobre-flex-col:nth-child(4){
+  order: 4;
+  background-color: rgba(243, 237, 237, 0.993);
+}
+
+
 .lista-secaoCursos h3{
     font-size: 19px;
 }
+
+
 .lista-secaoCursos p{
     font-size: 15px;
+    color: #818181;
 }
+
+
 ul.lista-secaoCursos{
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     align-items: center;
     justify-content: space-around;
+}
 
-}
-div.secaoSobre-flex-col:nth-child(1){
-    order: 1;
-}
-div.secaoSobre-flex-col:nth-child(2){
-    order: 2;
-}
-div.secaoSobre-flex-col:nth-child(3){
-    order: 3;
-    background-color: rgba(243, 237, 237, 0.993);
-}
-div.secaoSobre-flex-col:nth-child(4){
-    order: 4;
-    background-color: rgba(243, 237, 237, 0.993);
-}
+
 li.lista-secaoCursos-item{
     width: 20%;
-    flex-direction: row;
+    flex-direction: column;
     margin: 50px 50px 50px 50px;
 }
+
+
 li.lista-secaoCursos-item img{
     width: 50px;
 }
+
+
 /* GERAL */
 
 /* HTML */
 html h2 {
   font-family: "Montserrat";
 }
+
+
 html {
   font-family: "Lato";
 }
+
+
 /* HTML */
 
 /* BODY */
 body {
   font-family: "Lato";
 }
+
+
 /* BODY */
 
 /* HEADER */
@@ -218,9 +280,11 @@ p {
 }
 .secaoDestaque h2 {
   font-size: 63px;
+  color: #fff;
 }
 .secaoDestaque p {
   font-size: 21px;
+  color: #fff;
 }
 .secaoDestaqueFormulario input {
   padding: 10px;
@@ -292,6 +356,7 @@ li {
   width: 70%;
   margin-top: 40px;
 }
+
 
 .calendario-data-rodape {
   display: flex;
