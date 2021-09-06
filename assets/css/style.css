@@ -1,4 +1,3 @@
-
 /*
 Theme Name: Landing Page Kenzie Academy
 Theme URI: https://kenzie.com.br/
@@ -25,79 +24,677 @@ family=Lato -> Títulos, textos
 */
 
 /* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* FONTS */
 
 /* VARIÁVEIS */
-:root{}
-  
+:root {
+}
+
 /* GERAL */
-html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    list-style: none;
+html,
+body,
+figure,
+div,
+input,
+textarea,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  list-style: none;
+  text-align: center;
 }
-img{
-    max-width: 800px;
+h3,
+p,
+span {
+  font-family: "Lato";
 }
-div.flex{
-    display: flex;
+img {
+  max-width: 800px;
 }
-div.full-container{
-    width: 100%;
-    max-width: 1850px;
-    margin:0 auto;
+div.flex {
+  display: flex;
 }
-div.large-container{
-    width: 100%;
-    max-width: 1170px;
-    margin:0 auto;
+div.full-container {
+  width: 100%;
+  max-width: 1850px;
+  margin: 0 auto;
 }
-div.container{
-    width: 100%;
-    max-width: 1140px;
-    margin:0 auto;
+div.large-container {
+  width: 100%;
+  max-width: 1170px;
 }
+div.container {
+  width: 100%;
+  max-width: 1140px;
+}
+.secaoDestaque h2 {
+  font-size: 63px;
+}
+.secaoDestaque p {
+  font-size: 21px;
+}
+.secaoDestaqueFormulario button {
+  font-size: 14px;
+}
+article.flex {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+article .flex button {
+  width: 100px;
+}
+div.secaoSobre-flex-col {
+  width: 40%;
+  flex-direction: row;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+div.secaoSobre-flex-col img {
+  width: 250px;
+}
+div.secaoSobre-flex-col h2 {
+  font-size: 24px;
+}
+div.secaoSobre-flex-col p {
+  font-size: 19px;
+}
+.lista-secaoCursos h3 {
+  font-size: 19px;
+}
+.lista-secaoCursos p {
+  font-size: 15px;
+}
+ul.lista-secaoCursos {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+}
+div.secaoSobre-flex-col:nth-child(1) {
+  order: 1;
+}
+div.secaoSobre-flex-col:nth-child(2) {
+  order: 2;
+}
+div.secaoSobre-flex-col:nth-child(3) {
+  order: 3;
+  background-color: rgba(243, 237, 237, 0.993);
+}
+div.secaoSobre-flex-col:nth-child(4) {
+  order: 4;
+  background-color: rgba(243, 237, 237, 0.993);
+}
+li.lista-secaoCursos-item {
+  width: 20%;
+  flex-direction: row;
+  margin: 50px 50px 50px 50px;
+}
+li.lista-secaoCursos-item img {
+  width: 50px;
+}
+
 /* GERAL */
-  
+
 /* HTML */
-html{}
+html h2 {
+  font-family: "Montserrat";
+}
+html {
+  font-family: "Lato";
+}
 /* HTML */
-  
+
 /* BODY */
-body{}
+body {
+  font-family: "Lato";
+}
 /* BODY */
-  
+
+/* SECTION ADAPTAÇÃO */
+
+div.secaoSobre-flex-col {
+  width: 40%;
+  flex-direction: row;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+div.secaoSobre-flex-col img {
+  width: 250px;
+}
+figure figcaption {
+  display: none;
+}
+div.secaoSobre-flex-col h2 {
+  font-size: 24px;
+}
+div.secaoSobre-flex-col p {
+  color: black;
+  font-size: 19px;
+}
+div.secaoSobre-flex-col:nth-child(1) {
+  order: 1;
+}
+div.secaoSobre-flex-col:nth-child(2) {
+  order: 2;
+}
+div.secaoSobre-flex-col:nth-child(3) {
+  order: 3;
+  background-color: rgba(243, 237, 237, 0.993);
+}
+div.secaoSobre-flex-col:nth-child(4) {
+  order: 4;
+  background-color: rgba(243, 237, 237, 0.993);
+}
+
+.lista-secaoCursos h3 {
+  font-size: 19px;
+}
+.lista-secaoCursos p {
+  font-size: 15px;
+  color: #818181;
+}
+ul.lista-secaoCursos {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+}
+li.lista-secaoCursos-item {
+  width: 20%;
+  flex-direction: column;
+  margin: 50px 50px 50px 50px;
+}
+li.lista-secaoCursos-item img {
+  width: 50px;
+}
+
+/* SECTION ADAPTAÇÃO */
+
 /* HEADER */
-header{}
+
+header {
+  width: 100vw;
+
+  background-color: #00043e;
+}
+.large-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+header img {
+  width: 70px;
+  margin: 20px 0px 0px 10px;
+}
+header figcaption {
+  display: none;
+}
+header nav {
+  margin: 25px 10px 0px 0px;
+}
+nav ul {
+  display: none;
+}
+.menuHamburguer div {
+  width: 45px;
+  height: 5px;
+
+  background-color: rgb(102, 102, 102);
+
+  margin: 5px;
+
+  border-radius: 50px;
+
+  position: relative;
+  right: -70px;
+  top: 0px;
+}
+.menuHamburguer {
+  margin-top: 30px;
+}
 /* HEADER */
-  
+
+/* SECTION SOBRE */
+div.secaoSobre-flex-col {
+  width: 40%;
+  flex-direction: row;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+div.secaoSobre-flex-col img {
+  width: 250px;
+}
+
+figure figcaption {
+  display: none;
+}
+
+div.secaoSobre-flex-col h2 {
+  font-size: 24px;
+}
+
+div.secaoSobre-flex-col p {
+  font-size: 19px;
+}
+
+div.secaoSobre-flex-col:nth-child(1) {
+  order: 1;
+}
+
+div.secaoSobre-flex-col:nth-child(2) {
+  order: 2;
+}
+
+div.secaoSobre-flex-col:nth-child(3) {
+  order: 3;
+  background-color: rgba(243, 237, 237, 0.993);
+}
+
+div.secaoSobre-flex-col:nth-child(4) {
+  order: 4;
+  background-color: rgba(243, 237, 237, 0.993);
+}
+
+/* SECTION SOBRE */
+
+/* SECTION DESTAQUE */
+.secaoDestaque {
+  background-color: #00043e;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.secaoDestaque h2,
+p {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+.secaoDestaque h2 {
+  font-size: 63px;
+}
+.secaoDestaque p {
+  font-size: 21px;
+}
+.secaoDestaqueFormulario input {
+  padding: 10px;
+  border-radius: 5px;
+  border-style: none;
+}
+.secaoDestaqueFormulario button {
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  border-style: none;
+  border-radius: 5px;
+  background-color: #007aff;
+  color: white;
+  font-size: 14px;
+}
+
+/* SECTION DESTAQUE */
+
+.secaoCursos img,
+.secaoSobre img {
+  width: 50px;
+}
+
+/* SECTION CALENDAR */
+
+.secaoCalendar,
+li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.secaoCalendar p {
+  color: black;
+  width: 85%;
+}
+
+.secaoCalendar li {
+  width: 235px;
+
+  border: 2px solid #00043e;
+}
+.calendario-data {
+  width: 100%;
+  height: 50px;
+
+  padding: 10px 0px 10px 0px;
+
+  background-color: #00043e;
+
+  margin-bottom: 20px;
+
+  font-size: 36px;
+
+  color: white;
+
+  display: flex;
+  justify-content: center;
+}
+li h3 {
+  font-size: 19px;
+}
+li p {
+  font-size: 15px;
+}
+li {
+  width: 70%;
+  margin-top: 40px;
+}
+
+.calendario-data-rodape {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  border-top: 1px solid #818181;
+
+  width: 100%;
+
+  padding-top: 10px;
+  margin: 20px 0px 20px 0px;
+}
+.calendario-data-rodape button {
+  width: 90%;
+  height: 50px;
+
+  border-style: none;
+  border-radius: 10px;
+  background-color: #007aff;
+
+  color: white;
+  font-size: 32px;
+  font-family: "Lato";
+
+  margin-top: 20px;
+}
+.calendario-data-rodape span {
+  font-size: 36px;
+  font-family: "Lato";
+}
+
+/* SECTION CALENDAR */
+
+/* SECTION CONTACT */
+.secaoContato {
+  width: 100%;
+  padding: 40px 5px;
+  font-size: 15px;
+  background-color: #81818181;
+  color: #303030;
+  margin-top: 30px;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+#contact_title {
+  text-transform: uppercase;
+}
+
+.secaoContato-informacoes {
+  padding-left: 20%;
+  padding-right: 18%;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.secaoContato-informacoes ul li {
+  padding-bottom: 7px;
+  padding-top: 10px;
+  text-align: start;
+}
+.secaoContato-informacoes ul li a {
+  text-decoration: none;
+}
+
+.secaoContato-informacoes p {
+  padding-top: 20px;
+  padding-bottom: 5px;
+  line-height: 25px;
+}
+
+.secaoContato-informacoes a:link {
+  color: #303030;
+}
+
+.form-input-model {
+  margin-bottom: 10px;
+}
+
+.form-input-model input {
+  width: 100%;
+  padding: 7px;
+  border: solid 1px #303030;
+  border-radius: 5px;
+}
+
+.form-input-model textarea {
+  width: 100%;
+  padding-bottom: 40px;
+  padding-left: 7px;
+  padding-top: 7px;
+  border: solid 1px #303030;
+  border-radius: 5px;
+}
+
+.form-input-model label {
+  display: none;
+}
+
+#send_button {
+  padding: 7px;
+  margin-left: 75%;
+  border: solid 1px #303030;
+  border-radius: 5px;
+  transition-duration: 0.25s;
+}
+
+#send_button:hover {
+  background-color: #303030;
+  color: #ffffff;
+}
+
+input#nome:hover {
+  font-size: 15px;
+  background-color: rgb(240, 255, 250);
+}
+input#email:hover {
+  font-size: 15px;
+  background-color: rgb(240, 255, 250);
+}
+textarea#mensagem:hover {
+  font-size: 15px;
+  background-color: rgb(240, 255, 250);
+}
+.secaoContato li {
+  width: 100%;
+  display: inline-block;
+}
+.secaoContato ul img {
+  width: 20px;
+}
+input,
+textarea {
+  text-align: start;
+}
+#buttonInput {
+  position: absolute;
+  right: 60px;
+
+  padding: 5px;
+}
+.secaoContato h2 {
+  position: relative;
+  top: -350px;
+}
+/* SECTION CONTACT */
+
 /* FOOTER */
-footer{}
+footer {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 5px;
+}
+
+footer p {
+  display: none;
+}
+footer img {
+  width: 30px;
+  margin-bottom: 20px;
+}
 /* FOOTER */
 
 /* INICIAL */
-main{}
+main {
+}
 /* INICIAL */
 
 /* EXTRAS */
 
 /* para estilizar a scrollbar */
-::-webkit-scrollbar{}
-::-webkit-scrollbar-button{}
-::-webkit-scrollbar-track{}
-::-webkit-scrollbar-track-piece{}
-::-webkit-scrollbar-thumb{}
-::-webkit-scrollbar-corner{}
-::-webkit-resizer{}
+::-webkit-scrollbar {
+}
+::-webkit-scrollbar-button {
+}
+::-webkit-scrollbar-track {
+}
+::-webkit-scrollbar-track-piece {
+}
+::-webkit-scrollbar-thumb {
+}
+::-webkit-scrollbar-corner {
+}
+::-webkit-resizer {
+}
 
 /* EXTRAS */
-  
 
 /* MEDIA QUERIES */
-    @media screen and (min-width: 400px) {}
-  
-    @media screen and (min-width: 800px) {}
+@media screen and (min-width: 1024px) {
+  .secaoDestaque {
+    background-image: url("../img/background-destaque.webp");
+    background-size: 100%;
+  }
+  nav ul {
+    display: inline;
+  }
+  .large-container nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .large-container ul a {
+    width: 120px;
+    margin-right: 40px;
+    color: white;
+    margin: auto;
+    text-decoration: none;
+    text-align: center;
+  }
+  .menuHamburguer {
+    display: none;
+  }
+  .secaoDestaqueFormulario {
+    width: 40%;
+  }
+  .secaoDestaqueFormulario input {
+    width: 70%;
+  }
+  .secaoDestaqueFormulario button {
+    width: 28%;
+  }
+
+  .secaoCalendar ul {
+    display: flex;
+    flex-direction: row;
+  }
+  .secaoCalendar ul li {
+    margin: 20px;
+  }
+  .secaoContato .flex {
+    flex-direction: row;
+  }
+  form {
+    width: 400px;
+  }
+  .flex-col input {
+    width: 45%;
+  }
+  #email {
+    float: right;
+  }
+  .form-input-model {
+    display: inline;
+  }
+  .secaoContato h2 {
+    bottom: 20px;
+    right: 150px;
+  }
+  #nome {
+    width: 49%;
+    margin-right: 10px;
+  }
+  #email {
+    width: 48%;
+  }
+  #buttonInput {
+    position: relative;
+    width: 60px;
+    left: 170px;
+  }
+  .secaoContato h2 {
+    position: relative;
+    right: 150px;
+    top: -10px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  #buttonInput {
+    right: 85px;
+  }
+}
+@media screen and (min-width: 425px) {
+  #buttonInput {
+    right: 110px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #buttonInput {
+    right: 280px;
+  }
+  .menuHamburguer div {
+    right: -200px;
+  }
+}
 /* MEDIA QUERIES */
